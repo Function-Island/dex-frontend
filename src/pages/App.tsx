@@ -6,7 +6,6 @@ import Polling from '../components/Header/Polling'
 import URLWarning from '../components/Header/URLWarning'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
-import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
 import AddLiquidity from './AddLiquidity'
 import {
   RedirectDuplicateTokenIds,
@@ -61,7 +60,6 @@ const Marginer = styled.div`
 export default function App() {
   return (
     <Suspense fallback={null}>
-      <Route component={DarkModeQueryParamReader} />
       <AppWrapper>
         <URLWarning />
         <HeaderWrapper>
