@@ -1,5 +1,5 @@
 import { Contract } from '@ethersproject/contracts'
-import { abi as STAKING_REWARDS_ABI } from '@uniswap/liquidity-staker/build/StakingRewards.json'
+import { abi as STAKING_REWARDS_ABI } from '../constants/abis/StakingRewards.json'
 import { ChainId, WPLS } from '@functionisland-dex/sdk'
 import { abi as IUniswapV2PairABI } from '../constants/abis/ISwapPair.json'
 import { useMemo } from 'react'
