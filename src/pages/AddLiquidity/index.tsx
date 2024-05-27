@@ -142,8 +142,8 @@ export default function AddLiquidity({
       value: BigNumber | null
     if (currencyA === PULSE || currencyB === PULSE) {
       const tokenBIsPLS = currencyB === PULSE
-      estimate = router.estimateGas.addLiquidityETH
-      method = router.addLiquidityETH
+      estimate = router.estimateGas.addLiquidityPLS
+      method = router.addLiquidityPLS
       args = [
         wrappedCurrency(tokenBIsPLS ? currencyA : currencyB, chainId)?.address ?? '', // token
         (tokenBIsPLS ? parsedAmountA : parsedAmountB).raw.toString(), // token desired

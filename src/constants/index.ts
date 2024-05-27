@@ -40,7 +40,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
 export const ADDITIONAL_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
   [ChainId.MAINNET]: {
     '0xA948E86885e12Fb09AfEF8C52142EBDbDf73cD18': [
-      new Token(ChainId.MAINNET, IDAI_ADDRESS, 18, 'ISLAND', 'Function Island')
+      new Token(ChainId.MAINNET, IDAI_ADDRESS, 18, 'iDAI', 'Function Island DAI')
     ]
   }
 }

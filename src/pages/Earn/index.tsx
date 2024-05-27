@@ -66,7 +66,8 @@ export default function Earn() {
               </RowBetween>
               <RowBetween>
                 <TYPE.white fontSize={14}>
-                  Deposit your LP Tokens to receive ISLAND, the native token of Function Island.
+                  Deposit your LP Tokens to receive iDAI, a 1:1 backed stable token with advanced capabilities within
+                  the Function Island ecosystem!
                 </TYPE.white>
               </RowBetween>{' '}
             </AutoColumn>

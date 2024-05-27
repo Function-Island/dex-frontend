@@ -209,9 +209,9 @@ export default function RemoveLiquidity({
     let methodNames: string[], args: Array<string | string[] | number | boolean>
     // we have approval, use normal remove liquidity
     if (approval === ApprovalState.APPROVED) {
-      // removeLiquidityETH
+      // removeLiquidityPLS
       if (oneCurrencyIsPLS) {
-        methodNames = ['removeLiquidityETH', 'removeLiquidityETHSupportingFeeOnTransferTokens']
+        methodNames = ['removeLiquidityPLS', 'removeLiquidityPLSSupportingFeeOnTransferTokens']
         args = [
           currencyBIsPLS ? tokenA.address : tokenB.address,
           liquidityAmount.raw.toString(),
@@ -237,9 +237,9 @@ export default function RemoveLiquidity({
     }
     // we have a signataure, use permit versions of remove liquidity
     else if (signatureData !== null) {
-      // removeLiquidityETHWithPermit
+      // removeLiquidityPLSWithPermit
       if (oneCurrencyIsPLS) {
-        methodNames = ['removeLiquidityETHWithPermit', 'removeLiquidityETHWithPermitSupportingFeeOnTransferTokens']
+        methodNames = ['removeLiquidityPLSWithPermit', 'removeLiquidityPLSWithPermitSupportingFeeOnTransferTokens']
         args = [
           currencyBIsPLS ? tokenA.address : tokenB.address,
           liquidityAmount.raw.toString(),
@@ -253,7 +253,7 @@ export default function RemoveLiquidity({
           signatureData.s
         ]
       }
-      // removeLiquidityETHWithPermit
+      // removeLiquidityPLSWithPermit
       else {
         methodNames = ['removeLiquidityWithPermit']
         args = [
@@ -367,7 +367,7 @@ export default function RemoveLiquidity({
       <>
         <RowBetween>
           <Text color={theme.text2} fontWeight={500} fontSize={16}>
-            {'ISLAND ' + currencyA?.symbol + '/' + currencyB?.symbol} Burned
+            {currencyA?.symbol + '/' + currencyB?.symbol} Burned
           </Text>
           <RowFixed>
             <DoubleCurrencyLogo currency0={currencyA} currency1={currencyB} margin={true} />
