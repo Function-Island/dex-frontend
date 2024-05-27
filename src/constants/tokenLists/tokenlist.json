@@ -1,0 +1,82 @@
+{
+    "name": "Pulsechain Tokens List",
+    "timestamp": "2021-01-21T23:57:10.982Z",
+    "version": {
+      "major": 2,
+      "minor": 0,
+      "patch": 0
+    },
+    "tags": {},
+    "logoURI": "https://functionisland.com/images/logo.png",
+    "keywords": [
+      "tokens",
+      "default"
+    ],
+    "tokens": [
+      {
+        "name": "Dai Stablecoin",
+        "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "symbol": "DAI",
+        "decimals": 18,
+        "chainId": 369,
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/DAI.png"
+      },
+      {
+        "name": "USDCoin",
+        "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "symbol": "USDC",
+        "decimals": 6,
+        "chainId": 369,
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/USDC.png"
+      },
+      {
+        "name": "Tether USD",
+        "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "symbol": "USDT",
+        "decimals": 6,
+        "chainId": 369,
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/USDT.png"
+      },
+      {
+        "name": "Wrapped BTC",
+        "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "symbol": "WBTC",
+        "decimals": 8,
+        "chainId": 369,
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/WBTC.png"
+      },
+      {
+        "name": "Wrapped Pulse",
+        "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "symbol": "WPLS",
+        "decimals": 18,
+        "chainId": 369,
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/WPLS.png"
+      },
+      {
+        "name": "Function Island",
+        "address": "0xDFB10795E6fE7D0Db68F9778Ba4C575a28E8Cd4c",
+        "symbol": "ISLAND",
+        "decimals": 18,
+        "chainId": 369, 
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/ISLAND.png"
+      },
+      {
+        "name": "Function Island FARM",
+        "address": "0xfd4d3A2fd12C7f3146428a2ebDCb489550Ae9bea",
+        "symbol": "FARM",
+        "decimals": 18,
+        "chainId": 369, 
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/farm.png"
+      },
+      {
+        "name": "Experiment 626",
+        "address": "0x25B4163f23e1F546fE509D7cE955E8411c1bD330",
+        "symbol": "E626",
+        "decimals": 18,
+        "chainId": 369, 
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/e626.png"
+      }
+    ]
+  }
+  
