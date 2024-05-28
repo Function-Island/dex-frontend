@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 import { AutoColumn } from '../Column'
 
-import noise from '../../assets/images/noise.png'
-
 export const TextBox = styled.div`
   display: flex;
   align-items: center;
@@ -50,7 +48,6 @@ export const CardBGImageSmaller = styled.span<{ desaturate?: boolean }>`
 `
 
 export const CardNoise = styled.span`
-  background: url(${noise});
   background-size: cover;
   mix-blend-mode: overlay;
   border-radius: 12px;

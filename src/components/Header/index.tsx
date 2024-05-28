@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 
 import styled from 'styled-components'
 
-import Logo from '../../assets/svg/logo.svg'
+import Logo from '../../assets/images/logo.png'
 import { useActiveWeb3React } from '../../hooks'
 import { usePLSBalances } from '../../state/wallet/hooks'
 
@@ -18,6 +18,7 @@ import Row, { RowFixed } from '../Row'
 import Web3Status from '../Web3Status'
 
 const HeaderFrame = styled.div`
+  background-color: #000;
   display: grid;
   grid-template-columns: 1fr 120px;
   align-items: center;
