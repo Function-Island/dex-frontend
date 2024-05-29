@@ -30,17 +30,17 @@ export function getExplorerLink(
 
   switch (type) {
     case 'transaction': {
-      return `${prefix}/tx/${data}`
+      return `${prefix}/#/tx/${data}`
     }
     case 'token': {
-      return `${prefix}/token/${data}`
+      return `${prefix}/#/token/${data}`
     }
     case 'block': {
-      return `${prefix}/block/${data}`
+      return `${prefix}/#/block/${data}`
     }
     case 'address':
     default: {
-      return `${prefix}/address/${data}`
+      return `${prefix}/#/address/${data}`
     }
   }
 }
