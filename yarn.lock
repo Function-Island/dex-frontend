@@ -1650,10 +1650,10 @@
     "@ethersproject/properties" "^5.0.0"
     "@ethersproject/strings" "^5.0.0"
 
-"@functionisland-dex/sdk@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@functionisland-dex/sdk/-/sdk-2.0.4.tgz#1d2b24d85c3bb743ede1265fbf1510b7d843370c"
-  integrity sha512-vV/e7meJkTLCg3D1aqvOt72FD5H+i0SiSBsDUDxyCSctqffFGCeoSVtfQ1g7hP60r2wIUyPMMNmUchZwuN74Tw==
+"@functionisland-dex/sdk@^2.0.7":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@functionisland-dex/sdk/-/sdk-2.0.7.tgz#9eb627dd43b708b7b1673780279501084c17634c"
+  integrity sha512-uCWgLaca/yzMXj7Qems0I2r6kD0BJaljLkBtBAqyXv1OdzhVwf2U+5zDxXGBo3vshA26Q1C4N+11kDVBwZqAtw==
   dependencies:
     "@uniswap/sdk-core" "^3.0.0"
     "@uniswap/v2-core" "^1.0.0"

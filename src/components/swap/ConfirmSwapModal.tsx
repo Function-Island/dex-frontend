@@ -81,6 +81,8 @@ export default function ConfirmSwapModal({
     trade?.inputAmount?.currency?.symbol
   } for ${trade?.outputAmount?.toSignificant(6)} ${trade?.outputAmount?.currency?.symbol}`
 
+  console.log(pendingText)
+
   const confirmationContent = useCallback(
     () =>
       swapErrorMessage ? (
