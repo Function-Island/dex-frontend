@@ -61,11 +61,11 @@ export function colors(): Colors {
     primary1: '#0c883e',
     primary2: '#0cbf54',
     primary3: '#21e56f',
-    primary4: '#376bad70',
-    primary5: '#153d6f70',
+    primary4: '#37ad3770',
+    primary5: '#156f2270',
 
     // color text
-    primaryText1: '#6da8ff',
+    primaryText1: '#6dff8d',
 
     // secondary
     secondary1: '#21e56f',
