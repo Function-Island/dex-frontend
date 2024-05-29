@@ -6,11 +6,11 @@ import { Token, ChainId } from '@functionisland-dex/sdk'
 import uriToHttp from 'utils/uriToHttp'
 
 async function getColorFromToken(token: Token): Promise<string | null> {
-  if (token.chainId === ChainId.MAINNET && token.address === '0xc7AD46e0b8a400Bb3C915120d284AafbA8fc4735') {
-    return Promise.resolve('#fa14f6')
+  if (token.chainId === ChainId.MAINNET && token.address === '0xDFB10795E6fE7D0Db68F9778Ba4C575a28E8Cd4c') {
+    return Promise.resolve('#14fa23')
   }
 
-  const path = `https://raw.githubusercontent.com/Function-Island/assets/main/tokens/${token.address}.png`
+  const path = `https://raw.githubusercontent.com/Function-Island/assets/main/tokens/${token.symbol?.toUpperCase()}.png`
 
   return Vibrant.from(path)
     .getPalette()
@@ -44,7 +44,7 @@ async function getColorFromUriPath(uri: string): Promise<string | null> {
 }
 
 export function useColor(token?: Token) {
-  const [color, setColor] = useState('#2172E5')
+  const [color, setColor] = useState('#21e52b')
 
   useLayoutEffect(() => {
     let stale = false
@@ -59,7 +59,7 @@ export function useColor(token?: Token) {
 
     return () => {
       stale = true
-      setColor('#2172E5')
+      setColor('#21e52b')
     }
   }, [token])
 
@@ -67,7 +67,7 @@ export function useColor(token?: Token) {
 }
 
 export function useListColor(listImageUri?: string) {
-  const [color, setColor] = useState('#2172E5')
+  const [color, setColor] = useState('#21e52b')
 
   useLayoutEffect(() => {
     let stale = false
@@ -82,7 +82,7 @@ export function useListColor(listImageUri?: string) {
 
     return () => {
       stale = true
-      setColor('#2172E5')
+      setColor('#21e52b')
     }
   }, [listImageUri])
 
