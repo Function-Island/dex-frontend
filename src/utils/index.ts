@@ -18,7 +18,7 @@ export function isAddress(value: any): string | false {
 }
 
 const PULSESCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  369: ''
+  369: 'https://scan.degenprotocol.io'
 }
 
 export function getExplorerLink(
@@ -26,7 +26,7 @@ export function getExplorerLink(
   data: string,
   type: 'transaction' | 'token' | 'address' | 'block'
 ): string {
-  const prefix = `https://${PULSESCAN_PREFIXES[chainId] || PULSESCAN_PREFIXES[369]}scan.degenprotocol.io`
+  const prefix = `https://${PULSESCAN_PREFIXES[chainId] || PULSESCAN_PREFIXES[369]}`
 
   switch (type) {
     case 'transaction': {
