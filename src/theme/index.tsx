@@ -212,7 +212,7 @@ html {
 export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: ${({ theme }) => theme.text1};
-  background-image: url("https://functionisland.com/images/wallpapers/wallpaper.jpg");
+  background-image: url("https://functionisland.com/images/wallpapers/wallpaper.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
