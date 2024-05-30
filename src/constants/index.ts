@@ -17,7 +17,7 @@ export const USDC = new Token(ChainId.MAINNET, '0x15D38573d2feeb82e7ad5187aB8c1D
 export const USDT = new Token(ChainId.MAINNET, '0x0Cb6F5a34ad42ec934882A05265A7d5F59b51A2f', 6, 'USDT', 'Tether USD')
 export const WBTC = new Token(ChainId.MAINNET, '0xb17D901469B9208B17d916112988A3FeD19b5cA1', 8, 'WBTC', 'Wrapped BTC')
 
-const IDAI_ADDRESS = '0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984'
+const IDAI_ADDRESS = '0x32A12Bdbeb8280d38292e6491070Ebadf826EE50'
 
 export const IDAI: { [chainId in ChainId]: Token } = {
   [ChainId.MAINNET]: new Token(ChainId.MAINNET, IDAI_ADDRESS, 18, 'iDAI', 'Function Island DAI')
@@ -39,7 +39,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
 
 export const ADDITIONAL_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
   [ChainId.MAINNET]: {
-    '0xA948E86885e12Fb09AfEF8C52142EBDbDf73cD18': [
+    '0x32A12Bdbeb8280d38292e6491070Ebadf826EE50': [
       new Token(ChainId.MAINNET, IDAI_ADDRESS, 18, 'iDAI', 'Function Island DAI')
     ]
   }

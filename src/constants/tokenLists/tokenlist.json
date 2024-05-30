@@ -15,7 +15,7 @@
     "tokens": [
       {
         "name": "Dai Stablecoin",
-        "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "address": "0xefD766cCb38EaF1dfd701853BFCe31359239F305",
         "symbol": "DAI",
         "decimals": 18,
         "chainId": 369,
@@ -68,6 +68,22 @@
         "decimals": 18,
         "chainId": 369, 
         "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/farm.png"
+      },
+      {
+        "name": "Function Island DAI",
+        "address": "0x32A12Bdbeb8280d38292e6491070Ebadf826EE50",
+        "symbol": "iDAI",
+        "decimals": 18,
+        "chainId": 369, 
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/iDAI.png"
+      },
+      {
+        "name": "Function Island Bonds",
+        "address": "0x32A12Bdbeb8280d38292e6491070Ebadf826EE50",
+        "symbol": "iBOND",
+        "decimals": 18,
+        "chainId": 369, 
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/iBOND.png"
       },
       {
         "name": "Experiment 626",

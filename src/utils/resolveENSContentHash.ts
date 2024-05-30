@@ -23,7 +23,7 @@ const REGISTRAR_ABI = [
     type: 'function'
   }
 ]
-const REGISTRAR_ADDRESS = '0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e'
+const REGISTRAR_ADDRESS = '0x65Cf7f7aa5A4a2c20120B445cA4F05F63E2628C4'
 
 const RESOLVER_ABI = [
   {
@@ -55,13 +55,14 @@ function resolverContract(resolverAddress: string, provider: Provider): Contract
 }
 
 /**
- * Fetches and decodes the result of an ENS contenthash lookup on mainnet to a URI
+ * Fetches and decodes the result of an PNS contenthash lookup on mainnet to a URI
  * @param ensName to resolve
  * @param provider provider to use to fetch the data
  */
 export default async function resolveENSContentHash(ensName: string, provider: Provider): Promise<string> {
   const ensRegistrarContract = new Contract(REGISTRAR_ADDRESS, REGISTRAR_ABI, provider)
   const hash = namehash(ensName)
+  console.log('hash', hash)
   const resolverAddress = await ensRegistrarContract.resolver(hash)
   return resolverContract(resolverAddress, provider).contenthash(hash)
 }
