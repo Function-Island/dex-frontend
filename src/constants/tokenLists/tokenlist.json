@@ -92,6 +92,14 @@
         "decimals": 18,
         "chainId": 369, 
         "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/e626.png"
+      },
+      {
+        "name": "Pulsechain DAI",
+        "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+        "symbol": "pDAI",
+        "decimals": 18,
+        "chainId": 369,
+        "logoURI": "https://raw.githubusercontent.com/Function-Island/assets/main/tokens/pDAI.png"
       }
     ]
   }
