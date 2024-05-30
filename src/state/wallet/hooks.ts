@@ -1,4 +1,3 @@
-import { IDAI } from './../../constants/index'
 import { Currency, CurrencyAmount, PULSE, JSBI, Token, TokenAmount } from '@functionisland-dex/sdk'
 import { useMemo } from 'react'
 import ERC20_INTERFACE from '../../constants/abis/erc20'
@@ -7,7 +6,6 @@ import { useActiveWeb3React } from '../../hooks'
 import { useMulticallContract } from '../../hooks/useContract'
 import { isAddress } from '../../utils'
 import { useSingleContractMultipleData, useMultipleContractSingleData } from '../multicall/hooks'
-import { useTotalUniEarned } from '../stake/hooks'
 
 /**
  * Returns a map of the given addresses to their eventually consistent PLS balances.
@@ -131,18 +129,4 @@ export function useAllTokenBalances(): { [tokenAddress: string]: TokenAmount | u
   const allTokensArray = useMemo(() => Object.values(allTokens ?? {}), [allTokens])
   const balances = useTokenBalances(account ?? undefined, allTokensArray)
   return balances ?? {}
-}
-
-// get the total owned, unclaimed, and unharvested iDAI for account
-export function useAggregateUniBalance(): TokenAmount | undefined {
-  const { account, chainId } = useActiveWeb3React()
-
-  const uni = chainId ? IDAI[chainId] : undefined
-
-  const uniBalance: TokenAmount | undefined = useTokenBalance(account ?? undefined, uni)
-  const uniUnHarvested: TokenAmount | undefined = useTotalUniEarned()
-
-  if (!uni) return undefined
-
-  return new TokenAmount(uni, JSBI.add(uniBalance?.raw ?? JSBI.BigInt(0), uniUnHarvested?.raw ?? JSBI.BigInt(0)))
 }

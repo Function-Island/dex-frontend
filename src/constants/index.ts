@@ -16,6 +16,20 @@ export const DAI = new Token(ChainId.MAINNET, '0xefD766cCb38EaF1dfd701853BFCe313
 export const USDC = new Token(ChainId.MAINNET, '0x15D38573d2feeb82e7ad5187aB8c1D52810B1f07', 6, 'USDC', 'USD//C')
 export const USDT = new Token(ChainId.MAINNET, '0x0Cb6F5a34ad42ec934882A05265A7d5F59b51A2f', 6, 'USDT', 'Tether USD')
 export const WBTC = new Token(ChainId.MAINNET, '0xb17D901469B9208B17d916112988A3FeD19b5cA1', 8, 'WBTC', 'Wrapped BTC')
+export const ISLAND = new Token(
+  ChainId.MAINNET,
+  '0xDFB10795E6fE7D0Db68F9778Ba4C575a28E8Cd4c',
+  18,
+  'ISLAND',
+  'Function Island'
+)
+export const FARM = new Token(
+  ChainId.MAINNET,
+  '0xfd4d3A2fd12C7f3146428a2ebDCb489550Ae9bea',
+  18,
+  'FARM',
+  'Function Island Farm'
+)
 
 const IDAI_ADDRESS = '0x32A12Bdbeb8280d38292e6491070Ebadf826EE50'
 
@@ -34,7 +48,7 @@ const WPLS_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WPLS_ONLY,
-  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDC, USDT, WBTC]
+  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDC, USDT, WBTC, ISLAND, FARM]
 }
 
 export const ADDITIONAL_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
