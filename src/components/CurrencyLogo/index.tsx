@@ -17,7 +17,7 @@ const StyledPulsechainLogo = styled.img<{ size: string }>`
   border-radius: 24px;
 `
 
-const StyledLogo = styled(Logo)<{ size: string }>`
+const StyledLogo = styled(Logo) <{ size: string }>`
   width: ${({ size }) => size};
   height: ${({ size }) => size};
   border-radius: ${({ size }) => size};
@@ -41,9 +41,9 @@ export default function CurrencyLogo({
 
     if (currency instanceof Token) {
       if (currency instanceof WrappedTokenInfo) {
-        return [...uriLocations, getTokenLogoURL(currency.address)]
+        return [...uriLocations, getTokenLogoURL(currency.symbol?.toLowerCase() ?? currency.address)]
       }
-      return [getTokenLogoURL(currency.address)]
+      return [getTokenLogoURL(currency.symbol?.toLowerCase() ?? currency.address)]
     }
     return []
   }, [currency, uriLocations])

@@ -4,7 +4,7 @@ import useENSName from './useENSName'
 
 /**
  * Given a name or address, does a lookup to resolve to an address and name
- * @param nameOrAddress ENS name or address
+ * @param nameOrAddress address
  */
 export default function useENS(
   nameOrAddress?: string | null
