@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next'
 import styled, { css } from 'styled-components'
 import { injected } from '../../connectors'
 import { NetworkContextName } from '../../constants'
-import useENSName from '../../hooks/useENSName'
 import { useWalletModalToggle } from '../../state/application/hooks'
 import { isTransactionRecent, useAllTransactions } from '../../state/transactions/hooks'
 import { TransactionDetails } from '../../state/transactions/reducer'
@@ -43,7 +42,7 @@ const Web3StatusError = styled(Web3StatusGeneric)`
   }
 `
 
-const Web3StatusConnect = styled(Web3StatusGeneric)<{ faded?: boolean }>`
+const Web3StatusConnect = styled(Web3StatusGeneric) <{ faded?: boolean }>`
   background-color: ${({ theme }) => theme.primary4};
   border: none;
   color: ${({ theme }) => theme.primaryText1};
@@ -70,7 +69,7 @@ const Web3StatusConnect = styled(Web3StatusGeneric)<{ faded?: boolean }>`
     `}
 `
 
-const Web3StatusConnected = styled(Web3StatusGeneric)<{ pending?: boolean }>`
+const Web3StatusConnected = styled(Web3StatusGeneric) <{ pending?: boolean }>`
   background-color: ${({ pending, theme }) => (pending ? theme.primary1 : theme.bg2)};
   border: 1px solid ${({ pending, theme }) => (pending ? theme.primary1 : theme.bg3)};
   color: ${({ pending, theme }) => (pending ? theme.white : theme.text1)};
@@ -120,8 +119,6 @@ function Web3StatusInner() {
   const { t } = useTranslation()
   const { account, connector, error } = useWeb3React()
 
-  const { ENSName } = useENSName(account ?? undefined)
-
   const allTransactions = useAllTransactions()
 
   const sortedRecentTransactions = useMemo(() => {
@@ -143,7 +140,7 @@ function Web3StatusInner() {
           </RowBetween>
         ) : (
           <>
-            <Text>{ENSName || shortenAddress(account)}</Text>
+            <Text>{shortenAddress(account)}</Text>
           </>
         )}
         {!hasPendingTransactions && connector && <StatusIcon connector={connector} />}
@@ -166,10 +163,8 @@ function Web3StatusInner() {
 }
 
 export default function Web3Status() {
-  const { active, account } = useWeb3React()
+  const { active } = useWeb3React()
   const contextNetwork = useWeb3React(NetworkContextName)
-
-  const { ENSName } = useENSName(account ?? undefined)
 
   const allTransactions = useAllTransactions()
 
@@ -188,7 +183,7 @@ export default function Web3Status() {
   return (
     <>
       <Web3StatusInner />
-      <WalletModal ENSName={ENSName ?? undefined} pendingTransactions={pending} confirmedTransactions={confirmed} />
+      <WalletModal pendingTransactions={pending} confirmedTransactions={confirmed} />
     </>
   )
 }

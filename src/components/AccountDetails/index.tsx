@@ -127,17 +127,6 @@ const AccountControl = styled.div`
   }
 `
 
-const AddressLink = styled(ExternalLink)<{ hasENS: boolean; isENS: boolean }>`
-  font-size: 0.825rem;
-  color: ${({ theme }) => theme.text3};
-  margin-left: 1rem;
-  font-size: 0.825rem;
-  display: flex;
-  :hover {
-    color: ${({ theme }) => theme.text2};
-  }
-`
-
 const CloseIcon = styled.div`
   position: absolute;
   right: 1rem;
@@ -206,7 +195,6 @@ interface AccountDetailsProps {
   toggleWalletModal: () => void
   pendingTransactions: string[]
   confirmedTransactions: string[]
-  ENSName?: string
   openOptions: () => void
 }
 
@@ -214,7 +202,6 @@ export default function AccountDetails({
   toggleWalletModal,
   pendingTransactions,
   confirmedTransactions,
-  ENSName,
   openOptions
 }: AccountDetailsProps) {
   const { chainId, account, connector } = useActiveWeb3React()
@@ -265,7 +252,7 @@ export default function AccountDetails({
                     <WalletAction
                       style={{ fontSize: '.825rem', fontWeight: 400, marginRight: '8px' }}
                       onClick={() => {
-                        ;(connector as any).close()
+                        ; (connector as any).close()
                       }}
                     >
                       Disconnect
@@ -283,25 +270,14 @@ export default function AccountDetails({
               </AccountGroupingRow>
               <AccountGroupingRow id="web3-account-identifier-row">
                 <AccountControl>
-                  {ENSName ? (
-                    <>
-                      <div>
-                        {getStatusIcon()}
-                        <p> {ENSName}</p>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      <div>
-                        {getStatusIcon()}
-                        <p> {account && shortenAddress(account)}</p>
-                      </div>
-                    </>
-                  )}
+                  <div>
+                    {getStatusIcon()}
+                    <p> {account && shortenAddress(account)}</p>
+                  </div>
                 </AccountControl>
               </AccountGroupingRow>
               <AccountGroupingRow>
-                {ENSName ? (
+                {(
                   <>
                     <AccountControl>
                       <div>
@@ -311,36 +287,10 @@ export default function AccountDetails({
                           </Copy>
                         )}
                         {chainId && account && (
-                          <AddressLink
-                            hasENS={!!ENSName}
-                            isENS={true}
-                            href={chainId && getExplorerLink(chainId, ENSName, 'address')}
-                          >
+                          <ExternalLink href={getExplorerLink(chainId, account, 'address')}>
                             <LinkIcon size={16} />
                             <span style={{ marginLeft: '4px' }}>View on Explorer</span>
-                          </AddressLink>
-                        )}
-                      </div>
-                    </AccountControl>
-                  </>
-                ) : (
-                  <>
-                    <AccountControl>
-                      <div>
-                        {account && (
-                          <Copy toCopy={account}>
-                            <span style={{ marginLeft: '4px' }}>Copy Address</span>
-                          </Copy>
-                        )}
-                        {chainId && account && (
-                          <AddressLink
-                            hasENS={!!ENSName}
-                            isENS={false}
-                            href={getExplorerLink(chainId, account, 'address')}
-                          >
-                            <LinkIcon size={16} />
-                            <span style={{ marginLeft: '4px' }}>View on Explorer</span>
-                          </AddressLink>
+                          </ExternalLink>
                         )}
                       </div>
                     </AccountControl>
