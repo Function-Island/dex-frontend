@@ -14,16 +14,16 @@ import {
 describe('utils', () => {
   describe('#getExplorerLink', () => {
     it('correct for tx', () => {
-      expect(getExplorerLink(369, 'abc', 'transaction')).toEqual('https://scan.degenprotocol.io/tx/abc')
+      expect(getExplorerLink(369, 'abc', 'transaction')).toEqual('https://txscan.pls.to/tx/abc')
     })
     it('correct for token', () => {
-      expect(getExplorerLink(369, 'abc', 'token')).toEqual('https://scan.degenprotocol.io/token/abc')
+      expect(getExplorerLink(369, 'abc', 'token')).toEqual('https://txscan.pls.to/token/abc')
     })
     it('correct for address', () => {
-      expect(getExplorerLink(369, 'abc', 'address')).toEqual('https://scan.degenprotocol.io/address/abc')
+      expect(getExplorerLink(369, 'abc', 'address')).toEqual('https://txscan.pls.to/address/abc')
     })
     it('enum', () => {
-      expect(getExplorerLink(ChainId.MAINNET, 'abc', 'address')).toEqual('https://scan.degenprotocol.io/address/abc')
+      expect(getExplorerLink(ChainId.MAINNET, 'abc', 'address')).toEqual('https://txscan.pls.to/address/abc')
     })
   })
 
