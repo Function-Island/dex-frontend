@@ -12,10 +12,12 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
+export const WrappedPLS = new Token(ChainId.MAINNET, '0xA1077a294dDE1B09bB078844df40758a5D0f9a27', 18, 'DAI', 'Wrapped PLS')
 export const DAI = new Token(ChainId.MAINNET, '0xefD766cCb38EaF1dfd701853BFCe31359239F305', 18, 'DAI', 'Dai Stablecoin')
 export const USDC = new Token(ChainId.MAINNET, '0x15D38573d2feeb82e7ad5187aB8c1D52810B1f07', 6, 'USDC', 'USD//C')
 export const USDT = new Token(ChainId.MAINNET, '0x0Cb6F5a34ad42ec934882A05265A7d5F59b51A2f', 6, 'USDT', 'Tether USD')
 export const WBTC = new Token(ChainId.MAINNET, '0xb17D901469B9208B17d916112988A3FeD19b5cA1', 8, 'WBTC', 'Wrapped BTC')
+export const IDAI = new Token(ChainId.MAINNET, '0x32A12Bdbeb8280d38292e6491070Ebadf826EE50', 18, 'iDAI', 'Island DAI')
 export const ISLAND = new Token(
   ChainId.MAINNET,
   '0xDFB10795E6fE7D0Db68F9778Ba4C575a28E8Cd4c',
@@ -30,16 +32,6 @@ export const FARM = new Token(
   'FARM',
   'Function Island Farm'
 )
-
-const IDAI_ADDRESS = '0x32A12Bdbeb8280d38292e6491070Ebadf826EE50'
-
-export const IDAI: { [chainId in ChainId]: Token } = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, IDAI_ADDRESS, 18, 'iDAI', 'Function Island DAI')
-}
-
-export const COMMON_CONTRACT_NAMES: { [address: string]: string } = {
-  [IDAI_ADDRESS]: 'iDAI'
-}
 
 const WPLS_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WPLS[ChainId.MAINNET]]

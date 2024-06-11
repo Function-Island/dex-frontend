@@ -49,6 +49,7 @@ export default function Earn() {
    * @todo only account for this if rewards are inactive
    */
   const stakingInfosWithBalance = stakingInfos?.filter(s => JSBI.greaterThan(s.stakedAmount.raw, BIG_INT_ZERO))
+  console.log(stakingInfosWithBalance)
 
   // toggle copy if rewards are inactive
   const stakingRewardsExist = Boolean(typeof chainId === 'number' && (STAKING_REWARDS_INFO[chainId]?.length ?? 0) > 0)
@@ -67,7 +68,7 @@ export default function Earn() {
               <RowBetween>
                 <TYPE.white fontSize={14}>
                   Deposit your LP Tokens to receive iDAI, a 1:1 backed stable token with advanced capabilities within
-                  the Function Island ecosystem!
+                  the Function Island ecosystem! There are no fees to stake or unstake your LP - enjoy! 🌴
                 </TYPE.white>
               </RowBetween>{' '}
             </AutoColumn>
@@ -87,11 +88,9 @@ export default function Earn() {
           {stakingRewardsExist && stakingInfos?.length === 0 ? (
             <Loader style={{ margin: 'auto' }} />
           ) : !stakingRewardsExist ? (
-            <OutlineCard>No active pools</OutlineCard>
-          ) : stakingInfos?.length !== 0 && stakingInfosWithBalance.length === 0 ? (
-            <OutlineCard>No active pools</OutlineCard>
+            <OutlineCard>Fuck This</OutlineCard>
           ) : (
-            stakingInfosWithBalance?.map(stakingInfo => {
+            stakingInfos?.map(stakingInfo => {
               // need to sort by added liquidity here
               return <PoolCard key={stakingInfo.stakingRewardAddress} stakingInfo={stakingInfo} />
             })
