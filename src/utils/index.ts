@@ -18,7 +18,7 @@ export function isAddress(value: any): string | false {
 }
 
 const PULSESCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  369: 'scan.degenprotocol.io'
+  369: 'txscan.pls.to'
 }
 
 export function getExplorerLink(
