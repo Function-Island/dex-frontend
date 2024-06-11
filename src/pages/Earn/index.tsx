@@ -6,7 +6,6 @@ import { TYPE } from '../../theme'
 import PoolCard from '../../components/earn/PoolCard'
 import { RowBetween } from '../../components/Row'
 import { CardSection, DataCard, CardNoise, CardBGImage } from '../../components/earn/styled'
-import { Countdown } from './Countdown'
 import Loader from '../../components/Loader'
 import { useActiveWeb3React } from '../../hooks'
 import { JSBI } from '@functionisland-dex/sdk'
@@ -68,7 +67,7 @@ export default function Earn() {
               <RowBetween>
                 <TYPE.white fontSize={14}>
                   Deposit your LP Tokens to receive iDAI, a 1:1 backed stable token with advanced capabilities within
-                  the Function Island ecosystem! There are no fees to stake or unstake your LP - enjoy! 🌴
+                  the Function Island ecosystem! There are no fees to stake or unstake your LP - enjoy!
                 </TYPE.white>
               </RowBetween>{' '}
             </AutoColumn>
@@ -79,16 +78,11 @@ export default function Earn() {
       </TopSection>
 
       <AutoColumn gap="lg" style={{ width: '100%', maxWidth: '720px' }}>
-        <DataRow style={{ alignItems: 'baseline' }}>
-          <TYPE.mediumHeader style={{ marginTop: '0.5rem' }}>Participating pools</TYPE.mediumHeader>
-          <Countdown exactEnd={stakingInfos?.[0]?.periodFinish} />
-        </DataRow>
-
         <PoolSection>
           {stakingRewardsExist && stakingInfos?.length === 0 ? (
             <Loader style={{ margin: 'auto' }} />
           ) : !stakingRewardsExist ? (
-            <OutlineCard>Fuck This</OutlineCard>
+            <OutlineCard>No Staking Rewards Available</OutlineCard>
           ) : (
             stakingInfos?.map(stakingInfo => {
               // need to sort by added liquidity here
