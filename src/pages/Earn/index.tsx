@@ -31,12 +31,6 @@ const PoolSection = styled.div`
   justify-self: center;
 `
 
-const DataRow = styled(RowBetween)`
-  ${({ theme }) => theme.mediaWidth.upToSmall`
-flex-direction: column;
-`};
-`
-
 export default function Earn() {
   const { chainId } = useActiveWeb3React()
 
