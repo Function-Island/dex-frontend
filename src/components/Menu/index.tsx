@@ -105,7 +105,7 @@ export default function Menu() {
             <BookOpen size={14} />
             Docs
           </MenuItem>
-          <MenuItem id="link" href="https://discord.gg/FCfyBSbCU5">
+          <MenuItem id="link" href="https://t.me/FunctionIsland">
             <MessageCircle size={14} />
             Discord
           </MenuItem>

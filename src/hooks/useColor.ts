@@ -10,7 +10,7 @@ async function getColorFromToken(token: Token): Promise<string | null> {
     return Promise.resolve('#14fa23')
   }
 
-  const path = `https://raw.githubusercontent.com/Function-Island/assets/main/tokens/${token.symbol?.toUpperCase()}.png`
+  const path = `https://raw.githubusercontent.com/Function-Island/assets/main/tokens/${token.symbol}.png`
 
   return Vibrant.from(path)
     .getPalette()
