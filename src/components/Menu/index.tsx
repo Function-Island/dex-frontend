@@ -107,7 +107,7 @@ export default function Menu() {
           </MenuItem>
           <MenuItem id="link" href="https://t.me/FunctionIsland">
             <MessageCircle size={14} />
-            Discord
+            Telegram
           </MenuItem>
           <MenuItem id="link" href="https://debank.com/">
             <PieChart size={14} />
