@@ -8,7 +8,7 @@ import { WrappedTokenInfo } from '../../state/lists/hooks'
 import Logo from '../Logo'
 
 export const getTokenLogoURL = (address: string) =>
-  `https://raw.githubusercontent.com/Function-Island/assets/main/tokens/${address}.png`
+  `https://dex.functionisland.com/images/tokens/${address}.png`
 
 const StyledPulsechainLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};
