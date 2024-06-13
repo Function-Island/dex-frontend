@@ -108,6 +108,62 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x6B175474E89094C44Da98b954EedeAC495271d0F.png"
+    },
+    {
+      "name": "Coast",
+      "address": "0x600136dA8cc6D1Ea07449514604dc4ab7098dB82",
+      "symbol": "CST",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x600136dA8cc6D1Ea07449514604dc4ab7098dB82.png"
+    },
+    {
+      "name": "Future T.I.M.E. Dividend from Ethereum",
+      "address": "0xAE0303f244A3e9c74Ee8D373aF0bd637643dD371",
+      "symbol": "FUTURE",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xAE0303f244A3e9c74Ee8D373aF0bd637643dD371.png"
+    },
+    {
+      "name": "Hedron",
+      "address": "0x3819f64f282bf135d62168C1e513280dAF905e06",
+      "symbol": "HDRN",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x3819f64f282bf135d62168C1e513280dAF905e06.png"
+    },
+    {
+      "name": "HocusPocus",
+      "address": "0xd22E78C22D7E77229d60cc9fC57b0E294F54488E",
+      "symbol": "HOC",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xd22E78C22D7E77229d60cc9fC57b0E294F54488E.png"
+    },
+    {
+      "name": "Internet Money",
+      "address": "0xBBcF895BFCb57d0f457D050bb806d1499436c0CE",
+      "symbol": "IM",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xBBcF895BFCb57d0f457D050bb806d1499436c0CE.png"
+    },
+    {
+      "name": "Incentive",
+      "address": "0x2fa878Ab3F87CC1C9737Fc071108F904c0B0C95d",
+      "symbol": "INC",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x2fa878Ab3F87CC1C9737Fc071108F904c0B0C95d.png"
+    },
+    {
+      "name": "T.I.M.E. Dividend",
+      "address": "0xCA35638A3fdDD02fEC597D8c1681198C06b23F58",
+      "symbol": "TIME",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xCA35638A3fdDD02fEC597D8c1681198C06b23F58.png"
     }
   ]
 }
