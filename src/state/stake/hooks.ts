@@ -1,6 +1,6 @@
 import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@functionisland-dex/sdk'
 import { useMemo } from 'react'
-import { DAI, IDAI, WrappedPLS } from '../../constants'
+import { DAI, IDAI, ISLAND, WrappedPLS } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
@@ -26,6 +26,10 @@ export const STAKING_REWARDS_INFO: {
     {
       tokens: [WrappedPLS, DAI],
       stakingRewardAddress: '0x19cc41a001c078f6440717827cad3d7b39afcb94'
+    },
+    {
+      tokens: [IDAI, ISLAND],
+      stakingRewardAddress: '0x892fdf9bce3499dfe2c087aa2dd64066658164c2'
     }
   ]
 }
