@@ -27,7 +27,7 @@ import { currencyId } from '../../utils/currencyId'
 import { useTotalSupply } from '../../data/TotalSupply'
 import { usePair } from '../../data/Reserves'
 import usePrevious from '../../hooks/usePrevious'
-import useUSDCPrice from '../../utils/useUSDCPrice'
+import useDAIPrice from '../../utils/useDAIPrice'
 import { BIG_INT_ZERO, BIG_INT_SECONDS_IN_WEEK } from '../../constants'
 
 const PageWrapper = styled(AutoColumn)`
@@ -139,8 +139,8 @@ export default function Manage({
   const countUpAmountPrevious = usePrevious(countUpAmount) ?? '0'
 
   // get the USD value of staked WPLS
-  const USDPrice = useUSDCPrice(WPLS)
-  const valueOfTotalStakedAmountInUSDC =
+  const USDPrice = useDAIPrice(WPLS)
+  const valueOfTotalStakedAmountInDAI =
     valueOfTotalStakedAmountInWPLS && USDPrice?.quote(valueOfTotalStakedAmountInWPLS)
 
   const toggleWalletModal = useWalletModalToggle()
@@ -167,8 +167,8 @@ export default function Manage({
           <AutoColumn gap="sm">
             <TYPE.body style={{ margin: 0 }}>Total deposits</TYPE.body>
             <TYPE.body fontSize={24} fontWeight={500}>
-              {valueOfTotalStakedAmountInUSDC
-                ? `$${valueOfTotalStakedAmountInUSDC.toFixed(0, { groupSeparator: ',' })}`
+              {valueOfTotalStakedAmountInDAI
+                ? `$${valueOfTotalStakedAmountInDAI.toFixed(0, { groupSeparator: ',' })}`
                 : `${valueOfTotalStakedAmountInWPLS?.toSignificant(4, { groupSeparator: ',' }) ?? '-'} PLS`}
             </TYPE.body>
           </AutoColumn>

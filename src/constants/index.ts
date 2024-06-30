@@ -14,7 +14,6 @@ type ChainTokenList = {
 
 export const WrappedPLS = new Token(ChainId.MAINNET, '0xA1077a294dDE1B09bB078844df40758a5D0f9a27', 18, 'DAI', 'Wrapped PLS')
 export const DAI = new Token(ChainId.MAINNET, '0xefD766cCb38EaF1dfd701853BFCe31359239F305', 18, 'DAI', 'Dai Stablecoin')
-export const USDC = new Token(ChainId.MAINNET, '0x15D38573d2feeb82e7ad5187aB8c1D52810B1f07', 6, 'USDC', 'USD//C')
 export const USDT = new Token(ChainId.MAINNET, '0x0Cb6F5a34ad42ec934882A05265A7d5F59b51A2f', 6, 'USDT', 'Tether USD')
 export const WBTC = new Token(ChainId.MAINNET, '0xb17D901469B9208B17d916112988A3FeD19b5cA1', 8, 'WBTC', 'Wrapped BTC')
 export const IDAI = new Token(ChainId.MAINNET, '0x32A12Bdbeb8280d38292e6491070Ebadf826EE50', 18, 'iDAI', 'Island DAI')
@@ -40,7 +39,7 @@ const WPLS_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WPLS_ONLY,
-  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDC, USDT, WBTC, ISLAND, FARM]
+  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDT, WBTC, ISLAND, FARM]
 }
 
 export const ADDITIONAL_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
@@ -58,18 +57,18 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WPLS_ONLY,
-  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDC, USDT, WBTC]
+  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDT, WBTC]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WPLS_ONLY,
-  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDC, USDT, WBTC]
+  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDT, WBTC]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
-    [USDC, USDT],
+    [DAI, IDAI],
     [DAI, USDT]
   ]
 }

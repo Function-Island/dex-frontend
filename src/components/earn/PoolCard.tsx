@@ -13,7 +13,7 @@ import { Break, CardNoise, CardBGImage } from './styled'
 import { unwrappedToken } from '../../utils/wrappedCurrency'
 import { useTotalSupply } from '../../data/TotalSupply'
 import { usePair } from '../../data/Reserves'
-import useUSDCPrice from '../../utils/useUSDCPrice'
+import useDAIPrice from '../../utils/useDAIPrice'
 import { BIG_INT_SECONDS_IN_WEEK } from '../../constants'
 
 const StatContainer = styled.div`
@@ -102,8 +102,8 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
   }
 
   // get the USD value of staked WPLS
-  const USDPrice = useUSDCPrice(WPLS)
-  const valueOfTotalStakedAmountInUSDC =
+  const USDPrice = useDAIPrice(WPLS)
+  const valueOfTotalStakedAmountInDAI =
     valueOfTotalStakedAmountInWPLS && USDPrice?.quote(valueOfTotalStakedAmountInWPLS)
 
   return (
@@ -128,8 +128,8 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
         <RowBetween>
           <TYPE.white> Total deposited</TYPE.white>
           <TYPE.white>
-            {valueOfTotalStakedAmountInUSDC
-              ? `$${valueOfTotalStakedAmountInUSDC.toFixed(0, { groupSeparator: ',' })}`
+            {valueOfTotalStakedAmountInDAI
+              ? `$${valueOfTotalStakedAmountInDAI.toFixed(0, { groupSeparator: ',' })}`
               : `${valueOfTotalStakedAmountInWPLS?.toSignificant(4, { groupSeparator: ',' }) ?? '-'} PLS`}
           </TYPE.white>
         </RowBetween>
