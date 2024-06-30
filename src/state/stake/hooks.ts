@@ -28,7 +28,7 @@ export const STAKING_REWARDS_INFO: {
       stakingRewardAddress: '0x19cc41a001c078f6440717827cad3d7b39afcb94'
     },
     {
-      tokens: [IDAI, ISLAND],
+      tokens: [ISLAND, IDAI],
       stakingRewardAddress: '0x892fdf9bce3499dfe2c087aa2dd64066658164c2'
     }
   ]
