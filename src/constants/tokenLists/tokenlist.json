@@ -86,6 +86,14 @@
       "logoURI": "https://dex.functionisland.com/images/tokens/0x883bBad0cd22A7dD1881A63Cf00E3b8cb03E6836.png"
     },
     {
+      "name": "Degen Protocol GOAT",
+      "address": "0xF5D0140B4d53c9476DC1488BC6d8597d7393f074",
+      "symbol": "GOAT",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xF5D0140B4d53c9476DC1488BC6d8597d7393f074.png"
+    },
+    {
       "name": "Experiment 626",
       "address": "0x25B4163f23e1F546fE509D7cE955E8411c1bD330",
       "symbol": "E626",
