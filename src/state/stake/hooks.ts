@@ -1,6 +1,6 @@
 import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@functionisland-dex/sdk'
 import { useMemo } from 'react'
-import { DAI, IDAI, ISLAND, WrappedPLS } from '../../constants'
+import { DAI, FARM, IDAI, ISLAND, WrappedPLS } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
@@ -30,6 +30,10 @@ export const STAKING_REWARDS_INFO: {
     {
       tokens: [ISLAND, IDAI],
       stakingRewardAddress: '0x892fdf9bce3499dfe2c087aa2dd64066658164c2'
+    },
+    {
+      tokens: [FARM, IDAI],
+      stakingRewardAddress: '0x1a2975a456779a1f87c8a647d8334d6c414f02e7'
     }
   ]
 }
@@ -73,13 +77,13 @@ export function useStakingInfo(pairToFilterBy?: Pair | null): StakingInfo[] {
     () =>
       chainId
         ? STAKING_REWARDS_INFO[chainId]?.filter(stakingRewardInfo =>
-            pairToFilterBy === undefined
-              ? true
-              : pairToFilterBy === null
+          pairToFilterBy === undefined
+            ? true
+            : pairToFilterBy === null
               ? false
               : pairToFilterBy.involvesToken(stakingRewardInfo.tokens[0]) &&
-                pairToFilterBy.involvesToken(stakingRewardInfo.tokens[1])
-          ) ?? []
+              pairToFilterBy.involvesToken(stakingRewardInfo.tokens[1])
+        ) ?? []
         : [],
     [chainId, pairToFilterBy]
   )
