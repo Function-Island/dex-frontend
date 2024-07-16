@@ -19,9 +19,9 @@ export const WrappedPLS = new Token(
   'DAI',
   'Wrapped PLS'
 )
+
 export const DAI = new Token(ChainId.MAINNET, '0xefD766cCb38EaF1dfd701853BFCe31359239F305', 18, 'DAI', 'Dai Stablecoin')
-export const USDT = new Token(ChainId.MAINNET, '0x0Cb6F5a34ad42ec934882A05265A7d5F59b51A2f', 6, 'USDT', 'Tether USD')
-export const WBTC = new Token(ChainId.MAINNET, '0xb17D901469B9208B17d916112988A3FeD19b5cA1', 8, 'WBTC', 'Wrapped BTC')
+
 export const DRPINU = new Token(
   ChainId.MAINNET,
   '0xD39Ad77ba6DbB8837F2AD75b2b66c6f3fEBfc20e',
@@ -29,6 +29,7 @@ export const DRPINU = new Token(
   'DRPINU',
   'Drippy Inu'
 )
+
 export const E626 = new Token(
   ChainId.MAINNET,
   '0x25B4163f23e1F546fE509D7cE955E8411c1bD330',
@@ -36,6 +37,7 @@ export const E626 = new Token(
   'E626',
   'Experiment 626'
 )
+
 export const GOAT = new Token(
   ChainId.MAINNET,
   '0xF5D0140B4d53c9476DC1488BC6d8597d7393f074',
@@ -43,8 +45,11 @@ export const GOAT = new Token(
   'GOAT',
   'Degen Protocol GOAT'
 )
+
 export const LUSD = new Token(ChainId.MAINNET, '0x5f98805A4E8be255a32880FDeC7F6728C6568bA0', 18, 'pLUSD', 'Liquity USD')
+
 export const IDAI = new Token(ChainId.MAINNET, '0x32A12Bdbeb8280d38292e6491070Ebadf826EE50', 18, 'iDAI', 'Island DAI')
+
 export const ISLAND = new Token(
   ChainId.MAINNET,
   '0xDFB10795E6fE7D0Db68F9778Ba4C575a28E8Cd4c',
@@ -52,6 +57,7 @@ export const ISLAND = new Token(
   'ISLAND',
   'Function Island'
 )
+
 export const FARM = new Token(
   ChainId.MAINNET,
   '0xfd4d3A2fd12C7f3146428a2ebDCb489550Ae9bea',
@@ -67,7 +73,7 @@ const WPLS_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WPLS_ONLY,
-  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDT, WBTC, ISLAND, FARM]
+  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, IDAI, ISLAND, FARM]
 }
 
 export const ADDITIONAL_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
@@ -85,19 +91,20 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   ...WPLS_ONLY,
-  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDT, WBTC]
+  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, IDAI, ISLAND, FARM]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   ...WPLS_ONLY,
-  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, USDT, WBTC]
+  [ChainId.MAINNET]: [...WPLS_ONLY[ChainId.MAINNET], DAI, IDAI, ISLAND, FARM]
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
+    [WPLS[ChainId.MAINNET], DAI],
     [DAI, IDAI],
-    [DAI, USDT]
+    [ISLAND, IDAI]
   ]
 }
 
