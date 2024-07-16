@@ -32,30 +32,29 @@ const HeaderWrapper = styled.div`
   ${({ theme }) => theme.flexRowNoWrap}
   width: 100%;
   justify-content: space-between;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  background-color: ${({ theme }) => theme.bg1};
 `
 
 const BodyWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 80px;
+  padding-top: 100px;
   align-items: center;
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 10;
+
+  ${({ theme }) => theme.mediaWidth.upToSmall`
+    padding: 16px;
+    padding-top: 2rem;
+  `};
+
+  z-index: 1;
 `
 
 const Marginer = styled.div`
   margin-top: 5rem;
-
-  ${({ theme }) => theme.mediaWidth.upToSmall`
-    margin-top: 7rem; /* Adjust this value as needed for mobile */
-  `}
 `
 
 export default function App() {
