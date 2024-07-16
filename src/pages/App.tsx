@@ -42,7 +42,7 @@ const BodyWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 80px; /* Adjust to accommodate the header height */
+  padding-top: 80px;
   align-items: center;
   flex: 1;
   overflow-y: auto;
@@ -52,6 +52,10 @@ const BodyWrapper = styled.div`
 
 const Marginer = styled.div`
   margin-top: 5rem;
+
+  ${({ theme }) => theme.mediaWidth.upToSmall`
+    margin-top: 7rem; /* Adjust this value as needed for mobile */
+  `}
 `
 
 export default function App() {
