@@ -213,20 +213,28 @@ export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: ${({ theme }) => theme.text1};
   background-image: url("https://functionisland.com/images/wallpapers/wallpaper.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; /* Cover the entire viewport */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 body {
   min-height: 100vh;
-  background-position: 0 -30vh;
+  background-image: url("https://functionisland.com/images/wallpapers/wallpaper.png");
+  background-size: cover; /* Cover the entire viewport */
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: ${({ theme }) =>
     `radial-gradient(50% 50% at 50% 50%, ${transparentize(0.9, theme.primary1)} 0%, ${transparentize(
       1,
       theme.bg1
     )} 100%)`};
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Ensures no horizontal scrolling */
 }
 `

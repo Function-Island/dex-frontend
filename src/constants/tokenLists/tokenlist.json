@@ -39,11 +39,11 @@
     },
     {
       "name": "Wrapped BTC",
-      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "address": "0xb17D901469B9208B17d916112988A3FeD19b5cA1",
       "symbol": "WBTC",
       "decimals": 8,
       "chainId": 369,
-      "logoURI": "https://dex.functionisland.com/images/tokens/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599.png"
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xb17D901469B9208B17d916112988A3FeD19b5cA1.png"
     },
     {
       "name": "Wrapped Pulse",
@@ -174,12 +174,28 @@
       "logoURI": "https://dex.functionisland.com/images/tokens/0xCA35638A3fdDD02fEC597D8c1681198C06b23F58.png"
     },
     {
-      "name": "LUSD Stablecoin",
+      "name": "Liquity USD",
       "address": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0",
-      "symbol": "LUSD",
+      "symbol": "pLUSD",
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0.png"
+    },
+    {
+      "name": "Island xFARM",
+      "address": "0x0a33fBc6c25223DAB557A7CA14CDfE04F08d4C5b",
+      "symbol": "xFARM",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x0a33fBc6c25223DAB557A7CA14CDfE04F08d4C5b.png"
+    },
+    {
+      "name": "Island xISLAND",
+      "address": "0x0Af510B4435fEa36f3428fF4404B175e9F42aA35",
+      "symbol": "xISLAND",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x0Af510B4435fEa36f3428fF4404B175e9F42aA35.png"
     }
   ]
 }

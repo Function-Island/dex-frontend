@@ -22,6 +22,28 @@ export const WrappedPLS = new Token(
 export const DAI = new Token(ChainId.MAINNET, '0xefD766cCb38EaF1dfd701853BFCe31359239F305', 18, 'DAI', 'Dai Stablecoin')
 export const USDT = new Token(ChainId.MAINNET, '0x0Cb6F5a34ad42ec934882A05265A7d5F59b51A2f', 6, 'USDT', 'Tether USD')
 export const WBTC = new Token(ChainId.MAINNET, '0xb17D901469B9208B17d916112988A3FeD19b5cA1', 8, 'WBTC', 'Wrapped BTC')
+export const DRPINU = new Token(
+  ChainId.MAINNET,
+  '0xD39Ad77ba6DbB8837F2AD75b2b66c6f3fEBfc20e',
+  18,
+  'DRPINU',
+  'Drippy Inu'
+)
+export const E626 = new Token(
+  ChainId.MAINNET,
+  '0x25B4163f23e1F546fE509D7cE955E8411c1bD330',
+  18,
+  'E626',
+  'Experiment 626'
+)
+export const GOAT = new Token(
+  ChainId.MAINNET,
+  '0xF5D0140B4d53c9476DC1488BC6d8597d7393f074',
+  18,
+  'GOAT',
+  'Degen Protocol GOAT'
+)
+export const LUSD = new Token(ChainId.MAINNET, '0x5f98805A4E8be255a32880FDeC7F6728C6568bA0', 18, 'pLUSD', 'Liquity USD')
 export const IDAI = new Token(ChainId.MAINNET, '0x32A12Bdbeb8280d38292e6491070Ebadf826EE50', 18, 'iDAI', 'Island DAI')
 export const ISLAND = new Token(
   ChainId.MAINNET,
