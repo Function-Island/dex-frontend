@@ -1,6 +1,6 @@
 import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@functionisland-dex/sdk'
 import { useMemo } from 'react'
-import { DAI, FARM, IDAI, ISLAND, WrappedPLS } from '../../constants'
+import { DAI, DRPINU, E626, FARM, GOAT, IDAI, ISLAND, LUSD, WrappedPLS } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
@@ -34,6 +34,22 @@ export const STAKING_REWARDS_INFO: {
     {
       tokens: [FARM, IDAI],
       stakingRewardAddress: '0x1a2975a456779a1f87c8a647d8334d6c414f02e7'
+    },
+    {
+      tokens: [DRPINU, IDAI],
+      stakingRewardAddress: '0x7b85e9dca73d8c610d4cbbe5d801972f2f095d17'
+    },
+    {
+      tokens: [E626, IDAI],
+      stakingRewardAddress: '0xb96cf7367b3df312aeb7ae718f5c1e4b11f40c12'
+    },
+    {
+      tokens: [GOAT, IDAI],
+      stakingRewardAddress: '0x2811db229d0fb796327f7b13abb28163c8be4b9d'
+    },
+    {
+      tokens: [LUSD, IDAI],
+      stakingRewardAddress: '0x5cba1254b3d3056842b9ae006c97f25420945df5'
     }
   ]
 }
