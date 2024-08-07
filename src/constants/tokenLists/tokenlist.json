@@ -196,6 +196,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x0Af510B4435fEa36f3428fF4404B175e9F42aA35.png"
+    },
+    {
+      "name": "Staked LUSD Stablecoin",
+      "address": "0xF2BcbE4a29cC9d485F3942b023fE8DB6c07b2aF0",
+      "symbol": "XpLUSD",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xF2BcbE4a29cC9d485F3942b023fE8DB6c07b2aF0.png"
     }
   ]
 }
