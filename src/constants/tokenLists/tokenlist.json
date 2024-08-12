@@ -214,6 +214,22 @@
       "logoURI": "https://dex.functionisland.com/images/tokens/0xC6B28B2E3Bf9fF26299D540a4D654F7ade4dFdB0.png"
     },
     {
+      "name": "PrimeApe",
+      "address": "0x1Ce712b990F0Eb66e274057bea5365aCB597F038",
+      "symbol": "PrimeApe",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x1Ce712b990F0Eb66e274057bea5365aCB597F038.png"
+    },
+    {
+      "name": "Bananas R+",
+      "address": "0xD1fcD37A275Fd04197a40dBE481766a4e891C4C4",
+      "symbol": "R+",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xD1fcD37A275Fd04197a40dBE481766a4e891C4C4.png"
+    },
+    {
       "name": "2PHUX Governance Token",
       "address": "0x115f3fa979a936167f9d208a7b7c4d85081e84bd",
       "symbol": "2PHUX",
