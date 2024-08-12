@@ -212,6 +212,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xC6B28B2E3Bf9fF26299D540a4D654F7ade4dFdB0.png"
+    },
+    {
+      "name": "2PHUX Governance Token",
+      "address": "0x115f3fa979a936167f9d208a7b7c4d85081e84bd",
+      "symbol": "2PHUX",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x115f3fa979a936167f9d208a7b7c4d85081e84bd.png"
     }
   ]
 }
