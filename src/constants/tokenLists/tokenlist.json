@@ -14,12 +14,28 @@
   ],
   "tokens": [
     {
-      "name": "Dai Stablecoin",
+      "name": "Dai Stablecoin from Ethereum",
       "address": "0xefD766cCb38EaF1dfd701853BFCe31359239F305",
       "symbol": "DAI",
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xefD766cCb38EaF1dfd701853BFCe31359239F305.png"
+    },
+    {
+      "name": "USDC from Ethereum",
+      "address": "0x15D38573d2feeb82e7ad5187aB8c1D52810B1f07",
+      "symbol": "USDC",
+      "decimals": 6,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x15D38573d2feeb82e7ad5187aB8c1D52810B1f07.png"
+    },
+    {
+      "name": "Tether USD from Ethereum",
+      "address": "0x0Cb6F5a34ad42ec934882A05265A7d5F59b51A2f",
+      "symbol": "USDT",
+      "decimals": 6,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x0Cb6F5a34ad42ec934882A05265A7d5F59b51A2f.png"
     },
     {
       "name": "USDCoin",
