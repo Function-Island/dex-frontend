@@ -52,8 +52,8 @@ export default function AddLiquidity({
 
   const oneCurrencyIsWPLS = Boolean(
     chainId &&
-      ((currencyA && currencyEquals(currencyA, WPLS[chainId])) ||
-        (currencyB && currencyEquals(currencyB, WPLS[chainId])))
+    ((currencyA && currencyEquals(currencyA, WPLS[chainId])) ||
+      (currencyB && currencyEquals(currencyB, WPLS[chainId])))
   )
 
   const toggleWalletModal = useWalletModalToggle() // toggle wallet when disconnected
@@ -256,9 +256,8 @@ export default function AddLiquidity({
     )
   }
 
-  const pendingText = `Supplying ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(6)} ${
-    currencies[Field.CURRENCY_A]?.symbol
-  } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(6)} ${currencies[Field.CURRENCY_B]?.symbol}`
+  const pendingText = `Supplying ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(6)} ${currencies[Field.CURRENCY_A]?.symbol
+    } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(6)} ${currencies[Field.CURRENCY_B]?.symbol}`
 
   const handleCurrencyASelect = useCallback(
     (currencyA: Currency) => {
@@ -343,8 +342,7 @@ export default function AddLiquidity({
                     <AutoColumn gap="10px">
                       <TYPE.link fontWeight={400} color={'primaryText1'}>
                         <b>Tip:</b> When you add liquidity, you will receive pool tokens representing your position.
-                        These tokens automatically earn fees proportional to your share of the pool, and can be redeemed
-                        at any time.
+                        Eligible LP pairs can be staked to earn iDAI rewards, which are backed by the trading fees gathered on the DEX.
                       </TYPE.link>
                     </AutoColumn>
                   </BlueCard>
