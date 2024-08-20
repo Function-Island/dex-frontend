@@ -81,8 +81,8 @@ export default function RemoveLiquidity({
     [Field.LIQUIDITY_PERCENT]: parsedAmounts[Field.LIQUIDITY_PERCENT].equalTo('0')
       ? '0'
       : parsedAmounts[Field.LIQUIDITY_PERCENT].lessThan(new Percent('1', '100'))
-      ? '<1'
-      : parsedAmounts[Field.LIQUIDITY_PERCENT].toFixed(0),
+        ? '<1'
+        : parsedAmounts[Field.LIQUIDITY_PERCENT].toFixed(0),
     [Field.LIQUIDITY]:
       independentField === Field.LIQUIDITY ? typedValue : parsedAmounts[Field.LIQUIDITY]?.toSignificant(6) ?? '',
     [Field.CURRENCY_A]:
@@ -403,9 +403,8 @@ export default function RemoveLiquidity({
     )
   }
 
-  const pendingText = `Removing ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(6)} ${
-    currencyA?.symbol
-  } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(6)} ${currencyB?.symbol}`
+  const pendingText = `Removing ${parsedAmounts[Field.CURRENCY_A]?.toSignificant(6)} ${currencyA?.symbol
+    } and ${parsedAmounts[Field.CURRENCY_B]?.toSignificant(6)} ${currencyB?.symbol}`
 
   const liquidityPercentChangeCallback = useCallback(
     (value: number) => {
@@ -417,8 +416,8 @@ export default function RemoveLiquidity({
   const oneCurrencyIsPLS = currencyA === PULSE || currencyB === PULSE
   const oneCurrencyIsWPLS = Boolean(
     chainId &&
-      ((currencyA && currencyEquals(WPLS[chainId], currencyA)) ||
-        (currencyB && currencyEquals(WPLS[chainId], currencyB)))
+    ((currencyA && currencyEquals(WPLS[chainId], currencyA)) ||
+      (currencyB && currencyEquals(WPLS[chainId], currencyB)))
   )
 
   const handleSelectCurrencyA = useCallback(
@@ -482,7 +481,7 @@ export default function RemoveLiquidity({
               <AutoColumn gap="10px">
                 <TYPE.link fontWeight={400} color={'primaryText1'}>
                   <b>Tip:</b> Removing pool tokens converts your position back into underlying tokens at the current
-                  rate, proportional to your share of the pool. Accrued fees are included in the amounts you receive.
+                  rate, proportional to your share of the pool.
                 </TYPE.link>
               </AutoColumn>
             </BlueCard>
@@ -558,17 +557,15 @@ export default function RemoveLiquidity({
                       <RowBetween style={{ justifyContent: 'flex-end' }}>
                         {oneCurrencyIsPLS ? (
                           <StyledInternalLink
-                            to={`/remove/${currencyA === PULSE ? WPLS[chainId].address : currencyIdA}/${
-                              currencyB === PULSE ? WPLS[chainId].address : currencyIdB
-                            }`}
+                            to={`/remove/${currencyA === PULSE ? WPLS[chainId].address : currencyIdA}/${currencyB === PULSE ? WPLS[chainId].address : currencyIdB
+                              }`}
                           >
                             Receive WPLS
                           </StyledInternalLink>
                         ) : oneCurrencyIsWPLS ? (
                           <StyledInternalLink
-                            to={`/remove/${
-                              currencyA && currencyEquals(currencyA, WPLS[chainId]) ? 'PLS' : currencyIdA
-                            }/${currencyB && currencyEquals(currencyB, WPLS[chainId]) ? 'PLS' : currencyIdB}`}
+                            to={`/remove/${currencyA && currencyEquals(currencyA, WPLS[chainId]) ? 'PLS' : currencyIdA
+                              }/${currencyB && currencyEquals(currencyB, WPLS[chainId]) ? 'PLS' : currencyIdB}`}
                           >
                             Receive PLS
                           </StyledInternalLink>

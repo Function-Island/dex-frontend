@@ -134,7 +134,7 @@ export default function Pool() {
               </RowBetween>
               <RowBetween>
                 <TYPE.white fontSize={14}>
-                  {`0.2% of all trades on this pair is directed to the fiDEX Rewards Factory, which turns all trading fees into iDAI. Stake LP in eligible pools to earn iDAI or other Function Island assets..`}
+                  {`0.2% of all trades on Function Island DEX are directed to the Rewards Factory, which turns all trading fees into iDAI. Stake LP in eligible pools to earn iDAI or other Function Island assets.`}
                 </TYPE.white>
               </RowBetween>
             </AutoColumn>
