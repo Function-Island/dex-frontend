@@ -134,7 +134,7 @@ export default function Pool() {
               </RowBetween>
               <RowBetween>
                 <TYPE.white fontSize={14}>
-                  {`Liquidity providers earn a 0.2% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.`}
+                  {`0.2% of all trades on this pair is directed to the fiDEX Rewards Factory, which turns all trading fees into iDAI. Stake LP in eligible pools to earn iDAI or other Function Island assets..`}
                 </TYPE.white>
               </RowBetween>
             </AutoColumn>
