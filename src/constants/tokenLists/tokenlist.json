@@ -252,6 +252,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x115f3fa979a936167f9d208a7b7c4d85081e84bd.png"
+    },
+    {
+      "name": "Camel Clan",
+      "address": "0xc1967c5a0cedc577d9017d2465bc0b0c55eafe49",
+      "symbol": "CAMEL",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xc1967c5a0cedc577d9017d2465bc0b0c55eafe49.png"
     }
   ]
 }
