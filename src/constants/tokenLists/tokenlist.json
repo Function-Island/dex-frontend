@@ -264,7 +264,7 @@
     {
       "name": "Scuba Steve",
       "address": "0x5FE90464eD06B809D3f8888aD12e98346E409d4D",
-      "symbol": "TEVE",
+      "symbol": "$TEVE",
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x5FE90464eD06B809D3f8888aD12e98346E409d4D.png"
