@@ -260,6 +260,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xc1967c5a0cedc577d9017d2465bc0b0c55eafe49.png"
+    },
+    {
+      "name": "Scuba Steve",
+      "address": "0x5FE90464eD06B809D3f8888aD12e98346E409d4D",
+      "symbol": "TEVE",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x5FE90464eD06B809D3f8888aD12e98346E409d4D.png"
     }
   ]
 }
