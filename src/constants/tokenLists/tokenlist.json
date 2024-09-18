@@ -190,14 +190,6 @@
       "logoURI": "https://dex.functionisland.com/images/tokens/0xCA35638A3fdDD02fEC597D8c1681198C06b23F58.png"
     },
     {
-      "name": "Liquity USD",
-      "address": "0x5f98805A4E8be255a32880FDeC7F6728C6568bA0",
-      "symbol": "pLUSD",
-      "decimals": 18,
-      "chainId": 369,
-      "logoURI": "https://dex.functionisland.com/images/tokens/0x5f98805A4E8be255a32880FDeC7F6728C6568bA0.png"
-    },
-    {
       "name": "Island xFARM",
       "address": "0x0a33fBc6c25223DAB557A7CA14CDfE04F08d4C5b",
       "symbol": "xFARM",
@@ -212,14 +204,6 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x0Af510B4435fEa36f3428fF4404B175e9F42aA35.png"
-    },
-    {
-      "name": "Staked LUSD Stablecoin",
-      "address": "0xF2BcbE4a29cC9d485F3942b023fE8DB6c07b2aF0",
-      "symbol": "XpLUSD",
-      "decimals": 18,
-      "chainId": 369,
-      "logoURI": "https://dex.functionisland.com/images/tokens/0xF2BcbE4a29cC9d485F3942b023fE8DB6c07b2aF0.png"
     },
     {
       "name": "Prime Ape Bananas",
@@ -268,6 +252,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x5FE90464eD06B809D3f8888aD12e98346E409d4D.png"
+    },
+    {
+      "name": "NAZA",
+      "address": "0x93DB2097D10728549b370678337120790F5Ac75b",
+      "symbol": "NAZA",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x93DB2097D10728549b370678337120790F5Ac75b.png"
     }
   ]
 }
