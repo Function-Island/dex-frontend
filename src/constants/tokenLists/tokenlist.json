@@ -260,6 +260,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x93DB2097D10728549b370678337120790F5Ac75b.png"
+    },
+    {
+      "name": "X",
+      "address": "0xA6C4790cc7Aa22CA27327Cb83276F2aBD687B55b",
+      "symbol": "X",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xA6C4790cc7Aa22CA27327Cb83276F2aBD687B55b.png"
     }
   ]
 }
