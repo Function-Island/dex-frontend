@@ -268,6 +268,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xA6C4790cc7Aa22CA27327Cb83276F2aBD687B55b.png"
+    },
+    {
+      "name": "Peanut Brain Unification Token",
+      "address": "0xD9e265B409BD8eb924cc97A0aA8C29765cf9E581",
+      "symbol": "PNUTBUT",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xD9e265B409BD8eb924cc97A0aA8C29765cf9E581.png"
     }
   ]
 }
