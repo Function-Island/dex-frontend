@@ -1,6 +1,6 @@
 import { ChainId, CurrencyAmount, JSBI, Token, TokenAmount, Pair } from '@functionisland-dex/sdk'
 import { useMemo } from 'react'
-import { DAI, DRPINU, E626, FARM, GOAT, IDAI, ISLAND, LUSD, WrappedPLS } from '../../constants'
+import { DAI, FARM, IDAI, WrappedPLS } from '../../constants'
 import { STAKING_REWARDS_INTERFACE } from '../../constants/abis/staking-rewards'
 import { useActiveWeb3React } from '../../hooks'
 import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
