@@ -28,28 +28,8 @@ export const STAKING_REWARDS_INFO: {
       stakingRewardAddress: '0x19cc41a001c078f6440717827cad3d7b39afcb94'
     },
     {
-      tokens: [ISLAND, IDAI],
-      stakingRewardAddress: '0x892fdf9bce3499dfe2c087aa2dd64066658164c2'
-    },
-    {
       tokens: [FARM, IDAI],
       stakingRewardAddress: '0x1a2975a456779a1f87c8a647d8334d6c414f02e7'
-    },
-    {
-      tokens: [DRPINU, IDAI],
-      stakingRewardAddress: '0x7b85e9dca73d8c610d4cbbe5d801972f2f095d17'
-    },
-    {
-      tokens: [E626, IDAI],
-      stakingRewardAddress: '0xb96cf7367b3df312aeb7ae718f5c1e4b11f40c12'
-    },
-    {
-      tokens: [GOAT, IDAI],
-      stakingRewardAddress: '0x2811db229d0fb796327f7b13abb28163c8be4b9d'
-    },
-    {
-      tokens: [LUSD, IDAI],
-      stakingRewardAddress: '0x5cba1254b3d3056842b9ae006c97f25420945df5'
     }
   ]
 }
