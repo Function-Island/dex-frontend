@@ -292,6 +292,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xE08FC6Ce880D36a1167701028c0ae84dc3e82b8f.png"
+    },
+    {
+      "name": "My Portfolio",
+      "address": "0xD29582F42C6Aa7Bf4133F0CEda65de9c5fBEd338",
+      "symbol": "WRECKED",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xD29582F42C6Aa7Bf4133F0CEda65de9c5fBEd338.png"
     }
   ]
 }
