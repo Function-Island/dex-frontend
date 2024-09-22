@@ -284,6 +284,14 @@
       "decimals": 8,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x2b591e99afE9f32eAA6214f7B7629768c40Eeb39.png"
+    },
+    {
+      "name": "YEP",
+      "address": "0xE08FC6Ce880D36a1167701028c0ae84dc3e82b8f",
+      "symbol": "YEP",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xE08FC6Ce880D36a1167701028c0ae84dc3e82b8f.png"
     }
   ]
 }
