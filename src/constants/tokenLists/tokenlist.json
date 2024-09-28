@@ -300,6 +300,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xD29582F42C6Aa7Bf4133F0CEda65de9c5fBEd338.png"
+    },
+    {
+      "name": "Wrapped ETH from Ethereum",
+      "address": "0x02DcdD04e3F455D838cd1249292C58f3B79e3C3C",
+      "symbol": "WETH",
+      "decimals": 18,
+      "chainId": 269,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x02DcdD04e3F455D838cd1249292C58f3B79e3C3C.png"
     }
   ]
 }
