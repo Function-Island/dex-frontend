@@ -306,7 +306,7 @@
       "address": "0x02DcdD04e3F455D838cd1249292C58f3B79e3C3C",
       "symbol": "WETH",
       "decimals": 18,
-      "chainId": 269,
+      "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x02DcdD04e3F455D838cd1249292C58f3B79e3C3C.png"
     }
   ]
