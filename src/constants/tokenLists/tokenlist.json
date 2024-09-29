@@ -316,6 +316,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xf6aCb0AFD894dF043513A54b0b49ADd49FB9CeC3.png"
+    },
+    {
+      "name": "Staked T.I.M.E. Dividend",
+      "address": "0xc736d2A98111B1CB34c477e665740993b1d8E51E",
+      "symbol": "xTIME",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xc736d2A98111B1CB34c477e665740993b1d8E51E.png"
     }
   ]
 }
