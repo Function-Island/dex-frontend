@@ -308,6 +308,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x02DcdD04e3F455D838cd1249292C58f3B79e3C3C.png"
+    },
+    {
+      "name": "Church of Chads",
+      "address": "0xf6aCb0AFD894dF043513A54b0b49ADd49FB9CeC3",
+      "symbol": "CHADS",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xf6aCb0AFD894dF043513A54b0b49ADd49FB9CeC3.png"
     }
   ]
 }
