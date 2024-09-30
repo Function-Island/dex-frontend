@@ -324,6 +324,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xc736d2A98111B1CB34c477e665740993b1d8E51E.png"
+    },
+    {
+      "name": "Leonidas",
+      "address": "0x165D605DAEAD3ee97b887CAf30e2dF673646d1F4",
+      "symbol": "♆",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x165D605DAEAD3ee97b887CAf30e2dF673646d1F4.png"
     }
   ]
 }
