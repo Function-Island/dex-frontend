@@ -326,12 +326,20 @@
       "logoURI": "https://dex.functionisland.com/images/tokens/0xc736d2A98111B1CB34c477e665740993b1d8E51E.png"
     },
     {
-      "name": "Leonidas",
-      "address": "0x165D605DAEAD3ee97b887CAf30e2dF673646d1F4",
-      "symbol": "♆",
+      "name": "Low Energy Drink",
+      "address": "0xD1D5A10d702d98647C5F06ff057Bbea78818d27C",
+      "symbol": "SotaSoda",
       "decimals": 18,
       "chainId": 369,
-      "logoURI": "https://dex.functionisland.com/images/tokens/0x165D605DAEAD3ee97b887CAf30e2dF673646d1F4.png"
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xD1D5A10d702d98647C5F06ff057Bbea78818d27C.png"
+    },
+    {
+      "name": "BEAN by Barista",
+      "address": "0xd7407BD3E6aD1BAAE0ba9eaFD1Ec41bFE63907B2",
+      "symbol": "BEAN",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xd7407BD3E6aD1BAAE0ba9eaFD1Ec41bFE63907B2.png"
     }
   ]
 }
