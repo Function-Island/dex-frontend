@@ -340,6 +340,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xd7407BD3E6aD1BAAE0ba9eaFD1Ec41bFE63907B2.png"
+    },
+    {
+      "name": "PulseX",
+      "address": "0x95B303987A60C71504D99Aa1b13B4DA07b0790ab",
+      "symbol": "PLSX",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x95B303987A60C71504D99Aa1b13B4DA07b0790ab.png"
     }
   ]
 }
