@@ -348,6 +348,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x95B303987A60C71504D99Aa1b13B4DA07b0790ab.png"
+    },
+    {
+      "name": "DegenRoundTable",
+      "address": "0xA38682fc22eF2E26C37cceA801816634d045b4c4",
+      "symbol": "DRT",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xA38682fc22eF2E26C37cceA801816634d045b4c4.png"
     }
   ]
 }
