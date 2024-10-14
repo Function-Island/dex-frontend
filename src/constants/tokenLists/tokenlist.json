@@ -364,6 +364,22 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0x198B28c6B54Ed0e7B0961A6A49216A7Cf9DBDaCf.png"
+    },
+    {
+      "name": "Eevee ポンプイットイーブイ",
+      "address": "0x64f4EE0BDf92BcD7ED332eC6675726E9c0D06F8F",
+      "symbol": "EEVEE",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x64f4EE0BDf92BcD7ED332eC6675726E9c0D06F8F.png"
+    },
+    {
+      "name": "Ninetales",
+      "address": "0xc07b238a96306c64a4c3852751f66a4cd2cabba8",
+      "symbol": "NINE",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0xc07b238a96306c64a4c3852751f66a4cd2cabba8.png"
     }
   ]
 }
