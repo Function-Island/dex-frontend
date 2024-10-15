@@ -253,9 +253,6 @@ export default function Header() {
           >
             Liquidity
           </StyledNavLink>
-          <StyledNavLink id={`stake-nav-link`} to={'/farm'}>
-            Farm
-          </StyledNavLink>
         </HeaderLinks>
       </HeaderRow>
       <HeaderControls>
