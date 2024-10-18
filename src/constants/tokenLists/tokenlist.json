@@ -380,6 +380,14 @@
       "decimals": 18,
       "chainId": 369,
       "logoURI": "https://dex.functionisland.com/images/tokens/0xc07b238a96306c64a4c3852751f66a4cd2cabba8.png"
+    },
+    {
+      "name": "Meowth ニャース",
+      "address": "0x7cbEd98f3679795fc8Cd8594b98bE77575eDE156",
+      "symbol": "MEOWTH",
+      "decimals": 18,
+      "chainId": 369,
+      "logoURI": "https://dex.functionisland.com/images/tokens/0x7cbEd98f3679795fc8Cd8594b98bE77575eDE156.png"
     }
   ]
 }
